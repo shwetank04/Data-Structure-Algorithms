@@ -9,3 +9,5 @@ public class Solution {
         return result;
     }
 }
+
+// Time Complexity = O(log10(n)); :- Number of times it is getting divisible by 10.

@@ -2,7 +2,8 @@ class Solution {
     // Function to count the frequency of all elements from 1 to N in the array.
     public static void frequencyCount(int arr[], int N, int P) {
         // do modify in the given array
-        int hashArray[] = new int[N];
+        int size = Math.max(N,P);
+        int hashArray[] = new int[size];
         for(int i=0;i<N;i++){
             if(arr[i]-1 < N){
             hashArray[arr[i] -1] += 1;

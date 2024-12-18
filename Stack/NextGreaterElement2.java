@@ -10,9 +10,6 @@ class Solution {
             stack.push(newNums[i]);
         }
         for(int i= nums.length-1; i>=0;i--){
-            if(!stack.isEmpty() && stack.peek() > nums[i]){
-                result[i] = stack.peek();
-            }
             while (!stack.isEmpty() && stack.peek() <= nums[i]) {
                 stack.pop();
             }
